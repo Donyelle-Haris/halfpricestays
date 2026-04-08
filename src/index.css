@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy text-neutral-100 font-sans antialiased;
+    background-color: #0a0a0a;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-sans font-bold;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-gold text-white font-semibold px-6 py-3 rounded transition-all duration-200 hover:bg-gold-light hover:shadow-lg active:scale-95 inline-block;
+  }
+
+  .btn-outline-gold {
+    @apply border-2 border-gold text-gold font-semibold px-6 py-3 rounded transition-all duration-200 hover:bg-gold hover:text-white hover:shadow-lg active:scale-95 inline-block;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40;
+  }
+
+  .price-original {
+    @apply text-neutral-600 line-through text-sm;
+  }
+
+  .price-sale {
+    @apply text-gold font-bold text-xl;
+  }
+
+  .surface {
+    background: #111111;
+    border: 1px solid #2a2a2a;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  }
+
+  .bg-navy-gradient {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  }
+}

@@ -1,6 +1,6 @@
 name = "halfpricestays"
 compatibility_date = "2024-01-01"
-account_id = "1ebfd43ff760d960bb1e4d0d43651b7e"
+account_id = "efd0694f4ec7b22538e45058175c10a5"
 
 [assets]
 directory = "./dist"
